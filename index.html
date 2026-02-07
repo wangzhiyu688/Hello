@@ -1,187 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zhiyu - 个人简历</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            font-weight: 700;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.3em;
-            opacity: 0.9;
-        }
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
-            margin-top: 20px;
-            object-fit: cover;
-        }
-        section {
-            padding: 40px;
-        }
-        h2 {
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            font-size: 1.8em;
-            color: #2c3e50;
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .info-item {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .info-item strong {
-            color: #3498db;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 8px 0;
-            position: relative;
-            padding-left: 25px;
-        }
-        ul li::before {
-            content: "▹";
-            color: #3498db;
-            position: absolute;
-            left: 0;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill-tag {
-            background: #3498db;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 30px;
-            font-size: 0.9em;
-        }
-        .project {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .project h3 {
-            margin: 0 0 10px;
-            color: #2c3e50;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #2c3e50;
-            color: white;
-            font-size: 0.9em;
-        }
-        @media (max-width: 768px) {
-            header h1 { font-size: 2.2em; }
-            section { padding: 20px; }
-        }
-    </style>
+    <title>王志宇 - 个人名片</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
-    <div class="container">
+    <div class="card">
         <header>
-            <h1>zhiyu</h1>
-            <p>前端开发者 / Git学习者 / 技术爱好者</p>
-            <!-- 你可以替换成自己的头像链接 -->
-            <img src="https://via.placeholder.com/150" alt="头像" class="avatar">
+            <img src="https://avatars.githubusercontent.com/u/230549032?v=4&size=64" alt="王志宇" class="avatar"> 
+            <h1>王志宇</h1>
+            <p class="title">前端工程师 · React 专家</p>
+            <p class="tagline">要做一个有 swag 的程序员</p>
         </header>
 
-        <section>
-            <h2>关于我</h2>
-            <p>你好！我是 zhiyu，目前正在系统学习 Git 和 GitHub，目标是成为一名熟练的前端开发者。我喜欢干净的代码、优雅的设计和持续学习新技术。通过这个在线简历项目，我把学到的 Git 知识应用到实战中。</p>
-        </section>
-
-        <section>
-            <h2>基本信息</h2>
-            <div class="info-grid">
-                <div class="info-item"><strong>姓名：</strong> zhiyu</div>
-                <div class="info-item"><strong>所在地：</strong> 中国（或你真实的位置）</div>
-                <div class="info-item"><strong>邮箱：</strong> your@email.com（请改成你的）</div>
-                <div class="info-item"><strong>GitHub：</strong> <a href="https://github.com/你的用户名" style="color:#3498db;">github.com/你的用户名</a></div>
-            </div>
-        </section>
-
-        <section>
-            <h2>技能</h2>
-            <div class="skills">
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Git & GitHub</span>
-                <span class="skill-tag">VS Code</span>
-                <span class="skill-tag">响应式设计</span>
-                <!-- 自己加更多 -->
-            </div>
-        </section>
-
-        <section>
-            <h2>项目经验</h2>
-            <div class="project">
-                <h3>在线个人简历（当前项目）</h3>
-                <p>使用纯 HTML + CSS 构建，托管在 GitHub Pages，完全通过 Git 管理版本。练习了 clone、add、commit、branch、merge、push 等全流程。</p>
-            </div>
-            <div class="project">
-                <h3>其他项目（待补充）</h3>
-                <p>在这里写你未来的项目，比如一个 Todo List、小游戏等。</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>学习进度</h2>
-            <p>正在跟随《技术爬爬虾》小白玩转Git_Github 课程学习，目前已掌握：</p>
+        <section class="info">
+            <h2>联系方式</h2>
             <ul>
-                <li>Git 基本命令与四个区概念</li>
-                <li>分支管理与冲突解决</li>
-                <li>GitHub Pages 部署静态网站</li>
-                <li>每天坚持 commit，养成版本控制习惯</li>
+                <li>📧 <a href="mailto:wangzhiyu060528@gmail.com">wangzhiyu060528@gmail.com</a></li>
+                <li>📍 天津</li>
+                <li>🔗 <a href="https://github.com/wangzhiyu688" target="_blank">GitHub: wangzhiyu688</a></li>
+                <li>🌐 <a href="https://wangzhiyu688.github.io/Hello/" target="_blank">本站链接</a></li>
             </ul>
         </section>
 
+        <section class="skills">
+            <h2>核心技能</h2>
+            <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>React / React Native / Redux</li>
+                <li>TypeScript</li>
+                <li>HTML5 / CSS3 / Tailwind</li>
+                <li>性能优化 & 交互设计</li>
+                <li>Git / Webpack / Vite</li>
+            </ul>
+        </section>
+
+        <section class="about">
+            <h2>关于我</h2>
+            <p>热爱前端技术，专注于打造优雅、高性能的用户体验。持续学习新技术，追求代码与设计的完美结合。</p>
+        </section>
+
         <footer>
-            <p>&copy; 2026 zhiyu. All rights reserved. Built with GitHub Pages ❤️</p>
+            <p>最后更新：2026年2月</p>
         </footer>
     </div>
 </body>
-</html894388
+</html>
